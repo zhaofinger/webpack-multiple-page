@@ -1,0 +1,1 @@
+require('../../css/test.scss');

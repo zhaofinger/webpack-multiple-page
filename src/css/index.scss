@@ -1,0 +1,8 @@
+@import 'base.scss';
+@import 'var.scss';
+
+.content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
