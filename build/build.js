@@ -1,8 +1,8 @@
 /**
  * @Author: zhaoFinger
  * @Date: 2017-10-14 13:40:10
- * @Last Modified by:   zhaoFinger
- * @Last Modified time: 2017-10-14 13:40:10
+ * @Last Modified by: zhaoFinger
+ * @Last Modified time: 2017-10-28 17:13:56
  */
 /**
  * @Author: zhaoFinger
@@ -39,6 +39,10 @@ inquirer.prompt([
 		}
 	});
 	webpack(webpackConfig, (err, stats) => {
+		if (err) {
+			console.log(err);
+			return;
+		}
 		process.stdout.write(stats.toString({
 			colors: true,
 			modules: false,

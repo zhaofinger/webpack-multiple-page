@@ -1,8 +1,8 @@
 /**
  * @Author: zhaoFinger
  * @Date: 2017-10-14 13:40:06
- * @Last Modified by:   zhaoFinger
- * @Last Modified time: 2017-10-14 13:40:06
+ * @Last Modified by: zhaoFinger
+ * @Last Modified time: 2017-10-28 16:53:22
  */
 const webpackBase = require('./webpack.config.base');
 const webpackMerge = require('webpack-merge');
@@ -22,7 +22,7 @@ module.exports = webpackMerge(webpackBase, {
 		new webpack.optimize.CommonsChunkPlugin({
 			// chunk 名为 commons
 			name: 'commons',
-			filename: '[name].bundle.js',
-		}),
+			filename: '[name].bundle.js'
+		})
 	]
 });
